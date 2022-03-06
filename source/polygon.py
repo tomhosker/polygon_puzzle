@@ -38,6 +38,29 @@ class Polygon:
         result.sort()
         return result
 
+    def get_problem_printout(self):
+        """ Get a string representation of the problem. """
+        result = (
+            "Inner letter: "+self.inner_letter+"\n"+
+            "Outer letters: "+str(self.outer_letters)+"\n"
+            "Possible words: "+str(len(self.other_words))
+        )
+        return result
+
+    def get_solution_printout(self):
+        """ Get a string representation of the solution. """
+        result = (
+            "SOLUTION\n"+
+            "Max letter word: "+self.max_letter_word+"\n"
+            "Other words: "+str(self.other_words)
+        )
+        return result
+
+    def get_full_printout(self):
+        """ Get a printout of both the problem and the solution. """
+        result = self.get_problem_printout()+"\n\n"+self.get_solution_printout()
+        return result
+
 ####################
 # HELPER FUNCTIONS #
 ####################
