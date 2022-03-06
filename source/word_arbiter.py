@@ -9,10 +9,6 @@ import random
 # Local imports.
 import config
 
-# Non-standard imports.
-from autocorrect import Speller
-from progressbar import progressbar
-
 ##############
 # MAIN CLASS #
 ##############
